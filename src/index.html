@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class="  bg-purple-400">
+<body class=" bg-purple-400">
    <div>
     <h1 class="w-screen h-12.3 bg-purple-700 border border-gray-400 rounded-3xl    py-6 font-bold text-4xl text-center  text-zinc-200">Wheather predicition</h1>
    </div>
@@ -15,15 +16,51 @@
             <h2 class="mt-11 ml-14  text-2xl font-bold">Enter a City Name</h2>
             <input class="ml-14 mt-7 border-solid px-1 border-black w-56" type="text" id=" Any city" name="any city" value="Eg:Pune, kerala, Goa" >
             <label for="Any city"></label><br>
-            <button class="bg-purple-900 text-center text-white py-1 px-5 ml-14 mt-7 w-56 rounded-2xl">
-                Search
+            <button  class="bg-purple-900 text-center text-white py-1 px-5 ml-14 mt-7 w-56 rounded-2xl" ><i class='bx bx-search-alt-2'></i> Search
             </button>
             <div class="decoration-black  ml-24 font-semibold mt-8 text-xl text-black border-black">------OR------</div>
-            <button class="bg-purple-900 text-center text-white  p-4  py-1 px-5 ml-14 mt-5 w-56 rounded-2xl">
+            <button class="bg-purple-900 text-center text-white  p-4  py-1 px-5 ml-14 mt-5 w-56 rounded-2xl" ><i class='bx bxs-map'></i>
                 Use Current Location
             </button>
         </div>
-        <div class="box px-3 py-16 w-2/3 mt-12 ml-28 rounded-t-lg rounded-b-lg bg-purple-900 "></div>
+        <div class="box px-3 py-16 w-2/3 mt-12 ml-28 rounded-t-lg rounded-b-lg bg-purple-900 ">
+            <div class="wheather-box">
+                <img class="h-20 w-24 absolute float-left ml-6.5"  src="cloudy.webp">
+                <p class="text-white text-xl">Temperature 16<span class="p-2 font-normal">&#176<sup class="p-1">C</sup></span></p>
+                <p class="text-white text-xl">Broken Clouds</p>
+                <div class="whether details">
+                    <div class="humidity">
+                        <i class='bx bx-water'></i>
+                        <span>0%</span>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="wind">
+                        <i class='bx bx-wind'></i>
+                        <span>0km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+            
+
+            
+
+
+            </div>
+
+            </div>
+            </div>
+        
+        </div>
+    </section>
+
+
+    <section class="flex">
+        <div class="box w-36 h-14 px-10 py-20 mt-16 box-border ml-96 bg-purple-200"></div>
+        <div class="box w-36 h-14 px-10 py-20 mt-16 box-border ml-14 bg-purple-200"></div>
+        <div class="box w-36 h-14 px-10 py-20 mt-16 box-border ml-14 bg-purple-200"></div>
+        <div class="box w-36 h-14 px-10 py-20 mt-16 box-border ml-14 bg-purple-200"></div>
+        <div class="box w-36 h-14 px-10 py-20 mt-16 box-border ml-14 bg-purple-200"></div>
     </section>
         
 
