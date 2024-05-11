@@ -6,29 +6,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="srcipt.js"></script>
 </head>
-<body class=" bg-purple-400">
+<body class="container" class=" bg-purple-400">
    <div>
     <h1 class="w-screen h-12.3 bg-purple-700 border border-gray-400 rounded-3xl    py-6 font-bold text-4xl text-center  text-zinc-200">Wheather predicition</h1>
    </div>
     <section class="flex">
         <div>
             <h2 class="mt-11 ml-14  text-2xl font-bold">Enter a City Name</h2>
-            <input class="ml-14 mt-7 border-solid px-1 border-black w-56" type="text" id=" Any city" name="any city" value="Eg:Pune, kerala, Goa" >
+            <input class="ml-14 mt-7 border-solid px-1 bg-sky-50 border-x-4 border-y-4 border-black w-56" type="text" id=" Any city" name="any city" placeholder="Eg:Pune, kerala, Goa" >
             <label for="Any city"></label><br>
-            <button  class="bg-purple-900 text-center text-white py-1 px-5 ml-14 mt-7 w-56 rounded-2xl" ><i class='bx bx-search-alt-2'></i> Search
+            <button id="Search-button" class="bg-purple-900 text-center text-white py-1 px-5 ml-14 mt-7 w-56 rounded-2xl" ><i class='bx bx-search-alt-2'></i> Search
             </button>
-            <div class="decoration-black  ml-24 font-semibold mt-8 text-xl text-black border-black">------OR------</div>
+            <!-- <div class="decoration-black  ml-24 font-semibold mt-8 text-xl text-black border-black">------OR------</div> -->
+            <div class="ordiv my-6 font-extrabold"><span>OR</span></div>
             <button class="bg-purple-900 text-center text-white  p-4  py-1 px-5 ml-14 mt-5 w-56 rounded-2xl" ><i class='bx bxs-map'></i>
                 Use Current Location
             </button>
         </div>
-        <div class="box px-3 py-16 w-2/3 mt-12 ml-28 rounded-t-lg rounded-b-lg bg-purple-900 ">
+        <div class="box px-3 py-14 w-4/5 mt-12 ml-28 rounded-t-lg rounded-b-lg bg-purple-900 ">
             <div class="wheather-box">
-                <img class="h-20 w-24 absolute float-left ml-6.5"  src="cloudy.webp">
-                <p class="text-white text-xl">Temperature 16<span class="p-2 font-normal">&#176<sup class="p-1">C</sup></span></p>
-                <p class="text-white text-xl">Broken Clouds</p>
-                <div class="whether details">
+                <div>
+                   <img class= " w-20 h-16"  src="cloudy.webp"> 
+                </div>
+                <div class="whether-details">
                     <div class="humidity">
                         <i class='bx bx-water'></i>
                         <span>0%</span>
@@ -40,27 +42,17 @@
                         <p>Wind Speed</p>
                     </div>
                 </div>
-
-            
-
-            
-
-
             </div>
-
-            </div>
-            </div>
-        
-        </div>
+        </div>    
     </section>
 
-
-    <section class="flex">
-        <div class="box w-36 h-14 px-10 py-20 mt-16 box-border ml-96 bg-purple-200"></div>
-        <div class="box w-36 h-14 px-10 py-20 mt-16 box-border ml-14 bg-purple-200"></div>
-        <div class="box w-36 h-14 px-10 py-20 mt-16 box-border ml-14 bg-purple-200"></div>
-        <div class="box w-36 h-14 px-10 py-20 mt-16 box-border ml-14 bg-purple-200"></div>
-        <div class="box w-36 h-14 px-10 py-20 mt-16 box-border ml-14 bg-purple-200"></div>
+    <div class="ml-96 mt-7 text-xl font-bold text-black"><p>5 Day's Forecast</p></div>
+    <section class="flex">        
+        <div class="box1 "></div>
+        <div class="box1 "></div>
+        <div class="box1 "></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
     </section>
         
 

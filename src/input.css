@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container{
+    background: rgb(214, 116, 241);
+}
+
+section div .ordiv {
+    text-align: center;
+    position: relative;
+  }
+  
+section div .ordiv span {
+    display: inline-block;
+  }
+  
+ section div .ordiv span:before,
+ section div .ordiv span:after {
+    border-top: 1px solid black;
+    display: block;
+    height: 1px;
+    content: " ";
+    width: 40%;
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+  }
+  
+ section div .ordiv span:after {
+   right: 0;
+    left:auto;
+  }
+img {
+    left: 50%;
+}
+
+/* box w-36 h-14 px-10 py-20 mt-10 box-border ml-14 bg-purple-200"; */
+ .box1{
+     box-sizing: border-box;
+    border: 1px solid rgb(241, 234, 234);
+    width: 10em;
+    height: 12em;
+    position: relative;
+    left: 29%;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: rgb(238, 198, 248);
+
+ } 
