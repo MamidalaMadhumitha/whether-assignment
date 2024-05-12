@@ -21,6 +21,8 @@ section div .ordiv span {
     display: block;
     height: 1px;
     content: " ";
+    padding: 0 15px;
+    margin-top: -4px;
     width: 40%;
     position: absolute;
     left: 0;
@@ -48,3 +50,54 @@ img {
     background-color: rgb(238, 198, 248);
 
  } 
+.details{
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+
+}
+.details-box{
+  color: black;
+  font-size: 18px;
+  padding: 20px;
+
+}
+.wheather-cards{
+  display: flex;
+  gap: 20px;
+}
+
+@media(max-width:1400px) {
+  .wheather-data .current-wheather {
+    padding: 20px;
+  }
+  .wheather-cards{
+    flex-wrap: wrap;
+  }
+  .wheather-cards  .box1{
+    width: calc(100% / 4 -15px);
+  }
+
+}
+@media(max-width:1200px){
+  .wheather-cards  .box1{
+    width: calc(100% / 3 -15px);
+  }
+
+}
+@media(max-width:950px){
+  .details{
+    width: 450px;
+  }
+  .wheather-cards .box1{
+    width: calc(100% / 2 -10px);
+  }
+}
+@media(max-width:750px){
+  .container{
+    flex-wrap: wrap;
+  }
+  .details{
+    width: 100%;
+  }
+}
