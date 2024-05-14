@@ -8,87 +8,69 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="srcipt.js" defer></script>
 </head>
-<body class="container" class=" bg-purple-400">
+<body class="container  bg-purple-400 ">
    <div>
-    <h1 class="w-screen h-12.3 bg-purple-700 border border-gray-400 rounded-3xl    py-6 font-bold text-4xl text-center  text-zinc-200">Wheather predicition</h1>
+    <h1 class="w-screen h-12.3 bg-purple-700 border border-gray-400  py-6 font-bold text-4xl text-center  text-zinc-200">Weather predicition</h1>
    </div>
-    <section class="flex">
-        <div>
-            <h2 class="mt-11 ml-14  text-2xl font-bold">Enter a City Name</h2>
-            <input  id= " city-input" class=" ml-14 mt-7  border-solid px-1 bg-sky-50 border-x-4 border-y-4 border-black w-56" type="text" id=" Any city" name="any city" placeholder="Eg:Pune, kerala, Goa" >
-            <label for="Any city"></label><br>
-            <button  id=" Search-button" class= "bg-purple-900 text-center text-white py-1 px-5 ml-14 mt-7 w-56 rounded-2xl" ><i class='bx bx-search-alt-2'></i> Search
-            </button>
-
-            <div class="ordiv my-6 font-extrabold"><span>OR</span></div>
-            <button id="Location-button"class="bg-purple-900 text-center text-white  p-4  py-1 px-5 ml-14 mt-5 w-56 rounded-2xl" ><i class='bx bxs-map'></i>
-                Use Current Location
-            </button>
+   <section class="flex">
+    <div class="weather-input">
+        <h3 class="mt-11 ml-12  text-2xl font-bold">Enter a City Name</h3>
+        <input class="city-input py-6 bg-sky-50 " type="text" placeholder="Eg:New York, London,Tokyo"><br>
+        <button class="search-btn bg-purple-900 text-center text-white py-1 px-5 ml-10 mt-7 w-4/5 rounded-2xl"><i class='bx bx-search-alt-2'></i>Search</button>
+        <div class="separator mt-7 my-6 font-extrabold"> OR</div>
+        <button class="location-btn bg-purple-900 text-center text-white py-1 px-5 ml-10 mt-7 w-4/5 rounded-2xl" ><i class='bx bxs-map'></i>Use Current Location</button>
+      </div>
+      <div class="weather-data bg-purple-700 py-5 p-7 w-4/5 h-56 mt-11 ml-40 text-white">
+        <div class="current-weather flex">
+          <div class="details ">
+            <!-- <h2 >_______ ( ______ )</h2>
+            <h6>Temperature: __°C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </div> -->
+          <div class="icon">
+            <img src="">
+            <h6></h6>
+          </div>
         </div>
-        <div class="box px-3 py-14 w-4/5 mt-12 ml-28 rounded-t-lg rounded-b-lg bg-purple-900 ">
-           <div class="wheather-data">
-              <div class="current-wheather flex">
-                <div class="details">
-                    <h2 class="font-bold text-2xl">London (23-06-19)</h2>
-                    <h4>Temperature: 19.10 <span>&#8451;</span></h4>
-                    <h4>Wind: 4.31 M/S</h4>
-                    <h4> Humidity: 79%</h4>                   
-                </div>
-                <div class="icon">
-                    <img class="h-24 w-28 ml-96" src="cloudy.webp">
-                    <h4 class="text-white ml-96">Broken Clouds</h4>
-                    
-                </div>
-
-              </div>
-            </div>               
-            
-        </div>    
-    </section>
-
-    <div class="ml-96 mt-7 text-xl font-bold text-black"><p>5 Day Forecast</p></div>     
-        <div class="wheather-cards">
-            <div class="box1">
-                <h2 class=" text-sm">(23-06-19)</h2>
-                <img class="w-5 h-6"src="cloudy.webp">
-                <h4>Temp: 19.10 <span>&#8451;</span></h4>
-                <h4>Wind: 4.31 M/S</h4>
-                <h4>Humidity: 79%</h4>                           
-            </div>
-            <div class="box1 ">
-                <h2 class=" text-sm">(23-06-19)</h2>
-                <img class="w-6 h-6" src="cloudy.webp">
-                <h4>Temp: 19.10 <span>&#8451;</span></h4>
-                <h4>Wind: 4.31 M/S</h4>
-                <h4> Humidity: 79%</h4>
-            </div>
-            <div class="box1 ">
-                <h2 class=" text-sm">(23-06-19)</h2>
-                <img class="w-6 h-6" src="cloudy.webp">
-                <h4>Temp: 19.10 <span>&#8451;</span></h4>
-                <h4>Wind: 4.31 M/S</h4>
-                <h4>Humidity: 79%</h4>
-            </div>
-            <div class="box1">
-                <h2 class=" text-sm">(23-06-19)</h2>
-                <img class="w-6 h-6"  src="cloudy.webp">
-                <h4>Temp: 19.10 <span>&#8451;</span></h4>
-                <h4>Wind: 4.31 M/S</h4>
-                <h4>Humidity: 79%</h4>
-            </div>
-            <div class="box1">
-                <h2 class=" text-sm">(23-06-19)</h2>
-                <img class="w-6 h-6"  src="cloudy.webp">
-                <h4>Temperature: 19.10 <span>&#8451;</span></h4>
-                <h4>Wind: 4.31 M/S</h4>
-                <h4> Humidity: 79%</h4>     
-            </div>
-
-        </div>                    
-   
-        
-
-    
+        </div>
+   </section>
+    <div class="days-forecast mt-7 gap-20 ml-52">
+      <h2 class="ml-64 mt-5 text-xl font-bold text-black">5-Day Forecast</h2>
+      <ul class="weather-cards ml-64 mt-3">
+         <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp: __°C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp: __°C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp: __°C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp: __°C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp: __°C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </li> 
+      </ul>
+    </div>
+  </div>
    
    
      
