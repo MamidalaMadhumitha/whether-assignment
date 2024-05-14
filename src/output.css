@@ -613,6 +613,10 @@ video {
   margin-left: 16rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-11 {
   margin-top: 2.75rem;
 }
@@ -637,8 +641,16 @@ video {
   height: 3rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-56 {
   height: 14rem;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .w-4\/5 {
@@ -758,6 +770,8 @@ video {
 
 /* Import Google font - Open Sans */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap'); */
+
 * {
   margin: 0;
   padding: 0;
@@ -798,20 +812,9 @@ video {
 }
 
 .current-weather .icon {
-  text-align: center;
   gap: 2px;
-}
-
-.current-weather .icon img {
-  max-width: 140px;
-  margin-left: 190%;
-  margin-bottom: 1px;
-}
-
-.current-weather .icon h6 {
-  margin-top: 1px;
-  font-size: 20px;
-  margin-left: 210%;
+  margin-left: 17rem;
+  margin-bottom: 2rem;
 }
 
 .days-forecast .weather-cards {
@@ -829,8 +832,12 @@ video {
 }
 
 .weather-cards .card h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.weather-cards .card h6 {
+  margin-top: 10px;
 }
 
 .weather-cards .card img {
