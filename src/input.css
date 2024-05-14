@@ -115,8 +115,11 @@
     flex-wrap: wrap;
     padding: 15px;
   }
+  .details{
+    margin-right: 40em;
+  }
   .weather-input {
-    width: 100%;
+    width: 20%;
   }
   .weather-data h2 {
     font-size: 1.35rem;
