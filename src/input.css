@@ -16,7 +16,7 @@
   outline: none;
   font-size: 1.07rem;
   padding: 0 15px;
-  margin: 1rem 2rem .5rem 2.5rem;
+  margin: 1rem 0 .5rem 2.5rem;
   border-radius: 4px;
   border: 3px solid #0e0d0d;
 }
@@ -80,6 +80,16 @@
 .weather-cards .card img {
   max-width: 70px;
   margin: 5px 0 -12px 0;
+}
+select {
+  width: 1.5rem;
+  height: 2rem;
+  background-color: #fff;
+  border:2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  color: #333;
 }
 
 /* media quieres for responsiveness */

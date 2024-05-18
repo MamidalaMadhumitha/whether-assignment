@@ -19,7 +19,6 @@ const createWeatherCard = (cityName, weatherItem, index) => {
                 </div>
                 <div class="icon">
                     <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" alt="weather-icon">
-                    <h5>${weatherItem.weather[0].description}</h5>
                 
                 </div>`;
     } else { 
@@ -111,7 +110,11 @@ const getUserCoordinates = () => {
 locationButton.addEventListener("click", getUserCoordinates);
 searchButton.addEventListener("click", getCityCoordinates);
 cityInput.addEventListener("keyup", e => e.key === "Enter" && getCityCoordinates());
+const citySelectTag = document.getElementById("cityInputMenu");
 
+citySelectTag.addEventListener("change", () => {
+  cityInput.value = citySelectTag.value;
+})
 
 
 

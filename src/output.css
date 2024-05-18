@@ -559,6 +559,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -581,6 +585,10 @@ video {
 
 .ml-64 {
   margin-left: 16rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .mt-10 {
@@ -611,20 +619,28 @@ video {
   height: 3.5rem;
 }
 
-.h-24 {
-  height: 6rem;
+.h-20 {
+  height: 5rem;
 }
 
 .h-28 {
   height: 7rem;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
 .h-56 {
   height: 14rem;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
+.h-screen {
+  height: 100vh;
+}
+
+.w-3\/5 {
+  width: 60%;
 }
 
 .w-32 {
@@ -635,8 +651,8 @@ video {
   width: 80%;
 }
 
-.w-64 {
-  width: 16rem;
+.w-60 {
+  width: 15rem;
 }
 
 .gap-20 {
@@ -762,7 +778,7 @@ video {
   outline: none;
   font-size: 1.07rem;
   padding: 0 15px;
-  margin: 1rem 2rem .5rem 2.5rem;
+  margin: 1rem 0 .5rem 2.5rem;
   border-radius: 4px;
   border: 3px solid #0e0d0d;
 }
@@ -840,6 +856,17 @@ video {
 .weather-cards .card img {
   max-width: 70px;
   margin: 5px 0 -12px 0;
+}
+
+select {
+  width: 1.5rem;
+  height: 2rem;
+  background-color: #fff;
+  border:2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  color: #333;
 }
 
 /* media quieres for responsiveness */
