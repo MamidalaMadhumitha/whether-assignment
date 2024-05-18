@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather predicition</title>
+    <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./output.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="srcipt.js" defer></script>
 </head>
-<body class="container  bg-purple-400 ">
+<body class="container bg-purple-400 ">
    <div>
-    <h1 class="w-screen h-12.3 bg-purple-700 border border-gray-400  py-6 font-bold text-4xl text-center  text-zinc-200">Weather predicition</h1>
-   </div>
-   <section class="flex">
-    <div class="weather-input">
-        <h3 class="mt-11 ml-12  text-2xl font-bold">Enter a City Name</h3>
-        <input class="city-input py-6 bg-sky-50 " type="text" placeholder="Eg:New York, London,Tokyo"><br>
-        <button class="search-btn bg-purple-900 text-center text-white py-1 px-5 ml-10 mt-7 w-4/5 rounded-2xl"><i class='bx bx-search-alt-2'></i>Search</button>
-        <div class="separator mt-7 my-6 font-extrabold"> OR</div>
-        <button class="location-btn bg-purple-900 text-center text-white py-1 px-5 ml-10 mt-7 w-4/5 rounded-2xl" ><i class='bx bxs-map'></i>Use Current Location</button>
+    <h1 class="mainhead h-24 bg-purple-700 border border-gray-400  py-6 font-bold text-4xl text-center  text-zinc-200">Weather Forecast</h1>
+  </div class="cmpt-body">
+    <section class="flex section1">
+      <div class="weather-input">
+        <h3 class=" mt-11 ml-12  text-2xl font-bold">Enter a City Name</h3>
+        <input class="city-input w-32 bg-sky-50 " type="text" placeholder="Eg:New York, London,Tokyo"><br>
+        <button class="search-btn bg-purple-900 mb-8 text-center text-white py-1 px-5 ml-10 mt-7 w-4/5 rounded-2xl"><i class='bx bx-search-alt-2'></i>Search</button>
+        <div class="separator mt-7 my-6 font-extrabold mb-8"> OR</div>
+        <button class="location-btn bg-purple-900 text-center text-white py-1  px-5 ml-10 mt-10 w-4/5 rounded-2xl" ><i class='bx bxs-map'></i>Use Current Location</button>
       </div>
-      <div class="weather-data bg-purple-700 py-5 p-7 w-4/5 h-56 mt-11 ml-40 text-white">
+      <div class="weather-data bg-purple-700 py-9 px-8  w-11/12 h-56 mt-12 ml-28 text-white">
         <div class="current-weather flex">
-          <div class="details ">
+          <div class="details">
             <h2>Hyderabad( 2023-05-14)</h2>
             <h6>Temperature: 38°C</h6>
             <h6>Wind:14 M/S</h6>
@@ -33,54 +33,49 @@
             <h5 class="text-xl">High temp</h5>
           </div>
         </div>
-        </div>
-   </section>
-    <div class="days-forecast mt-7 gap-20 ml-52">
+      </div>
+    </section>
+    <div class="days-forecast mt-5 gap-20 ml-52">
       <h2 class="ml-64 mt-5 text-xl font-bold text-black">5-Day Forecast</h2>
-      <ul class="weather-cards ml-64 mt-3">
-         <li class="card">
+      <ul class="weather-cards ml-64">
+         <li class="card w-64 h-56">
           <h3>(2024-05-15)</h3>
-          <img class="h-12" src="cloudy (1).png">
+          <img class="h-14" src="cloudy (1).png">
           <h6>Temp: 36°C</h6>
           <h6>Wind: 13M/S</h6>
           <h6>Humidity: 50%</h6>
         </li>
-        <li class="card">
+        <li class="card w-64 h-56">
           <h3>(2024-05-16 )</h3>
           <img src="rain.png">
           <h6>Temp: 35°C</h6>
           <h6>Wind: 14M/S</h6>
           <h6>Humidity: 54%</h6>
         </li>
-        <li class="card">
+        <li class="card w-64 h-56">
           <h3>(2024-05-17)</h3>
           <img src="clouds.png">
           <h6>Temp: 33°C</h6>
           <h6>Wind: 11M/S</h6>
           <h6>Humidity: 60%</h6>
         </li>
-        <li class="card">
+        <li class="card w-64 h-56">
           <h3>(2024-05-18)</h3>
           <img src="rain.png">
           <h6>Temp: 33°C</h6>
           <h6>Wind: 11M/S</h6>
           <h6>Humidity: 59%</h6>
         </li>
-        <li class="card">
+        <li class="card w-64 h-56">
           <h3>( 2024-05-19)</h3>
-          <img class="h-12" src="cloudy (1).png">
+          <img class="h-14" src="cloudy (1).png">
           <h6>Temp: 36°C</h6>
           <h6>Wind: 10M/S</h6>
           <h6>Humidity:56%</h6>
         </li> 
       </ul>
     </div>
-  </div>
-   
-   
-     
-        
-    
+  </div>  
     
 </body>
 </html>
